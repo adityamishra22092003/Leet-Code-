@@ -1,0 +1,1 @@
+const largestInteger = (n, s) => {    if (s > n * 9) return -1;    const q = (s / 9) | 0;    return 10 ** n - 10 ** (n - q) + (s % 9) * 10 ** (n - q - 1);};
