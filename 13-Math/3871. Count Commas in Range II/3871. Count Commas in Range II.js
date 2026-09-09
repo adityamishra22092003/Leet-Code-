@@ -1,0 +1,19 @@
+class Solution {
+public:
+   long long countCommas(long long n) {
+       long long count=0;
+       if (n<999) {
+           return count;
+       } else if (n<=999999) {
+           return n-999;
+       } else if (n<=999999999) {
+           return 2*(n-999999) + 999000;
+       } else if (n<=999999999999) {
+           return 3*(n-999999999)+2*999000000+999000;
+       } else if (n<=999999999999999) {
+           return 4*(n-999999999999)+3*999000000000+2*999000000+999000;
+       } else {
+           return 5+4*999000000000000+3*999000000000+2*999000000+999000;
+       }
+   }
+};```
